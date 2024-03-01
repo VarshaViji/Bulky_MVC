@@ -11,7 +11,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
     //defining controller to specific area
     [Area("Admin")]
     //adding authorization to visible only to admin
-    //[Authorize(Roles =SD.Role_Admin)]
+    [Authorize(Roles =SD.Role_Admin)]
     public class CategoryController : Controller
     {
         //1.get all categories

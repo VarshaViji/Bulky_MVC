@@ -17,5 +17,8 @@ namespace BulkyWeb.Models
         [ForeignKey("ApplicationUserId")]
         [ValidateNever]
         public ApplicationUser ApplicationUser { get; set; }
+        //To display the total order in cart ui we are adding price here
+        [NotMapped]//not mapped is used when we don't want to save the total price data in db only need to display in ui
+        public double Price { get; set; }
     }
 }
