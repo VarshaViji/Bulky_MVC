@@ -41,7 +41,11 @@ namespace BulkyWeb.Models
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
+        //[ValidateNever]
+        //public string ImageUrl { get; set; }       //removing image url for mutiple picture of products
+
+        //creating list for product images for multiple images
         [ValidateNever]
-        public string ImageUrl { get; set; }
+        public List<ProductImage> ProductImages { get; set; }
     }
 }

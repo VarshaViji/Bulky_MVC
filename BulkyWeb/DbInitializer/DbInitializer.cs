@@ -40,7 +40,7 @@ namespace Bulky.DataAccess.DbInitializer
             }
             catch (Exception ex) { }
 
-            //create roles if they ae not created
+            //create roles if they are not created
             //creating roles in database
             if (!_roleManager.RoleExistsAsync(SD.Role_Customer).GetAwaiter().GetResult())
             {

@@ -7,11 +7,11 @@ function loadDataTable() {
     dataTable=$('#tblData').DataTable({
         "ajax": { url: '/admin/company/getall' },
         "columns": [
-            { data: 'name', "width": "15%" },
-            { data: 'streetAddress', "width": "15%" },
-            { data: 'city', "width": "15%" },
-            { data: 'state', "width": "15%" },
-            { data: 'phoneNumber', "width": "15%" },
+            { "data": "name", "width": "15%" },
+            { "data": "streetAddress", "width": "15%" },
+            { "data": "city", "width": "15%" },
+            { "data": "state", "width": "15%" },
+            { "data": "phoneNumber", "width": "15%" },
             {
                 //creating edit and delete button in product list page table
                 data: 'id',
@@ -21,7 +21,7 @@ function loadDataTable() {
                     <a onClick=Delete('/admin/company/delete/${data}') class="btn btn-danger mx-2"> <i class="bi bi-trash-fill"></i> Delete</a>
                     </div>`
                 },
-                "width": "25"
+                "width": "25%"
             }
         ]
     });

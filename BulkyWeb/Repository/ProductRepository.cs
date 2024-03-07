@@ -30,10 +30,12 @@ namespace BulkyWeb.Repository
                 objFromDb.Description = obj.Description;
                 objFromDb.CategoryId = obj.CategoryId;
                 objFromDb.Author = obj.Author;
-                if (obj.ImageUrl != null)
-                {
-                    objFromDb.ImageUrl = obj.ImageUrl;
-                }
+                //to save a multiple product images
+                objFromDb.ProductImages = obj.ProductImages;
+                //if (obj.ImageUrl != null)
+                //{
+                //    objFromDb.ImageUrl = obj.ImageUrl;
+                //}
             }
         }
     }

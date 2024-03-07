@@ -29,12 +29,12 @@ function loadDataTable(status) {
     dataTable = $('#tblData').DataTable({
         "ajax": { url: '/admin/order/getall?status=' + status },
         "columns": [
-            { data: 'id', "width": "5%" },
-            { data: 'name', "width": "25%" },
-            { data: 'phoneNumber', "width": "20%" },
-            { data: 'applicationUser.email', "width": "20%" },
-            { data: 'orderStatus', "width": "10%" },
-            { data: 'orderTotal', "width": "10%" },
+            { "data": "id", "width": "5%" },
+            { "data": "name", "width": "25%" },
+            { "data": "phoneNumber", "width": "20%" },
+            { "data": "applicationUser.email", "width": "20%" },
+            { "data": "orderStatus", "width": "10%" },
+            { "data": "orderTotal", "width": "10%" },
             {
                 //creating edit and delete button in product list page table
                 data: 'id',
@@ -44,7 +44,7 @@ function loadDataTable(status) {
 
                     </div>`
                 },
-                "width": "10"
+                "width": "10%"
             }
         ]
     });

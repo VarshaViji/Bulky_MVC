@@ -60,7 +60,10 @@
                                     <li class="nav-item">
                                         <a class="dropdown-item" asp-area="Identity" asp-page="/Account/Register">Create User</a>
                                     </li>
-
+                                    @*for user list in user management*@
+                                    <li class="nav-item">
+                                        <a class="dropdown-item" asp-area="Admin" asp-controller="User" asp-action="Index">Manage User</a>
+                                    </li>
                                 </ul>
                             </li>
                         }
@@ -97,7 +100,9 @@
     <script src="//cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js" asp-append-version="true"></script>
 
     <script src="https://cdn.tiny.cloud/1/e2luck6lblu58wvam1mvt70ouuviegpafag5s2kx5uz9okq3/tinymce/6/tinymce.min.js" referrerpolicy="origin">
-    </script>
+    @*for toastr notification in LockUnlock*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
